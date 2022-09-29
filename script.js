@@ -1,7 +1,5 @@
-export default function() {
-   greet("k6");
-}
+import greeter from "k6/x/greeter"
 
-const greet = function(name) {
-   console.log("Servus! " + name)
-};
+export default function() {
+   console.log(greeter.greet("k6"));
+}
